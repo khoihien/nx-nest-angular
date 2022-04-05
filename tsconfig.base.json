@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-nest-angular/api-server/feature-config": [
+        "libs/api-server/feature-config/src/index.ts"
+      ],
       "@nx-nest-angular/api-server/utils-config": [
         "libs/api-server/utils-config/src/index.ts"
       ]
