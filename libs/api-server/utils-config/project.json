@@ -1,0 +1,22 @@
+{
+  "root": "libs/api-server/utils-config",
+  "sourceRoot": "libs/api-server/utils-config/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/api-server/utils-config/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/api-server/utils-config"],
+      "options": {
+        "jestConfig": "libs/api-server/utils-config/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
